@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Engineering Mechanics - Unit 3</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: 25px auto;
+        }
+
+        .back {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .box {
+            background: white;
+            margin: 20px 0;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            border-left: 5px solid #1e3a8a;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        .example {
+            background: #f0fdf4;
+            padding: 15px;
+            border-left: 5px solid green;
+        }
+
+        .important {
+            background: #fff7ed;
+            padding: 15px;
+            border-left: 5px solid orange;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        .mcq {
+            background: #fafafa;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .answer {
+            color: green;
+            font-weight: bold;
+        }
+
+        .top-btn {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 7px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Engineering Mechanics</h1>
+    <p>Unit 3 – Equilibrium</p>
+</header>
+
+<div class="container">
+
+    <a class="back" href="mechanics-notes.html">
+        ← Back to Mechanics Notes
+    </a>
+
+    <!-- INTRODUCTION -->
+    <div class="box">
+        <h2>1. Equilibrium</h2>
+
+        <p>
+            A body is said to be in <b>equilibrium</b> when the resultant
+            force and resultant moment acting on the body are zero.
+        </p>
+
+        <div class="formula">
+            For equilibrium:<br><br>
+            ΣF = 0<br>
+            ΣM = 0
+        </div>
+    </div>
+
+
+    <!-- TYPES -->
+    <div class="box">
+        <h2>2. Types of Equilibrium</h2>
+
+        <h3>1. Static Equilibrium</h3>
+        <p>
+            A body is at rest and all forces and moments are balanced.
+        </p>
+
+        <h3>2. Dynamic Equilibrium</h3>
+        <p>
+            A body moves with constant velocity while the resultant force
+            acting on it is zero.
+        </p>
+
+        <div class="important">
+            <b>Exam Point:</b><br>
+            Static equilibrium means the body is at rest.
+        </div>
+    </div>
+
+
+    <!-- CONDITIONS -->
+    <div class="box">
+        <h2>3. Conditions of Equilibrium</h2>
+
+        <p>For a body in 2D equilibrium:</p>
+
+        <div class="formula">
+            ΣFx = 0<br><br>
+            ΣFy = 0<br><br>
+            ΣM = 0
+        </div>
+
+        <p>
+            These three equations are used to find unknown forces and
+            support reactions.
+        </p>
+    </div>
+
+
+    <!-- FBD -->
+    <div class="box">
+        <h2>4. Free Body Diagram (FBD)</h2>
+
+        <p>
+            A <b>Free Body Diagram</b> is a simplified diagram showing
+            all external forces and moments acting on a body.
+        </p>
+
+        <h3>Steps to Draw FBD</h3>
+
+        <ol>
+            <li>Isolate the body from its surroundings.</li>
+            <li>Show all applied forces.</li>
+            <li>Show support reactions.</li>
+            <li>Show weight of the body.</li>
+            <li>Show dimensions if required.</li>
+            <li>Select suitable x and y directions.</li>
+        </ol>
+
+        <div class="important">
+            <b>Important:</b>
+            Correct FBD is the first step for solving equilibrium problems.
+        </div>
+    </div>
+
+
+    <!-- SUPPORTS -->
+    <div class="box">
+        <h2>5. Types of Supports</h2>
+
+        <h3>1. Roller Support</h3>
+        <p>
+            A roller support generally provides one reaction perpendicular
+            to the supporting surface.
+        </p>
+
+        <h3>2. Pin/Hinged Support</h3>
+        <p>
+            A pin support can provide horizontal and vertical reactions.
+        </p>
+
+        <h3>3. Fixed Support</h3>
+        <p>
+            A fixed support can provide horizontal reaction, vertical
+            reaction and a moment reaction.
+        </p>
+    </div>
+
+
+    <!-- BEAM -->
+    <div class="box">
+        <h2>6. Simply Supported Beam</h2>
+
+        <p>
+            A simply supported beam is generally supported by a pin at one
+            end and a roller at the other end.
+        </p>
+
+        <h3>Support Reactions</h3>
+
+        <p>
+            Let the reactions at the supports be:
+        </p>
+
+        <div class="formula">
+            Vertical reaction at A = Ay<br>
+            Vertical reaction at B = By
+        </div>
+
+        <p>
+            For equilibrium:
+        </p>
+
+        <div class="formula">
+            ΣFy = 0<br>
+            Ay + By - Total Load = 0
+        </div>
+    </div>
+
+
+    <!-- MOMENT -->
+    <div class="box">
+        <h2>7. Moment of a Force</h2>
+
+        <p>
+            The turning effect of a force about a point is called the
+            <b>moment of force</b>.
+        </p>
+
+        <div class="formula">
+            Moment = Force × Perpendicular Distance
+            <br><br>
+            M = F × d
+        </div>
+
+        <p>
+            SI unit of moment is <b>N·m</b>.
+        </p>
+
+        <h3>Sign Convention</h3>
+
+        <ul>
+            <li>Anticlockwise moment → Positive</li>
+            <li>Clockwise moment → Negative</li>
+        </ul>
+    </div>
+
+
+    <!-- LAMI -->
+    <div class="box">
+        <h2>8. Lami's Theorem</h2>
+
+        <p>
+            If a particle is in equilibrium under the action of three
+            coplanar concurrent forces, then each force is proportional
+            to the sine of the angle between the other two forces.
+        </p>
+
+        <div class="formula">
+            F₁ / sin α =
+            F₂ / sin β =
+            F₃ / sin γ
+        </div>
+
+        <p>
+            Lami's theorem is useful for solving problems involving
+            three concurrent forces.
+        </p>
+    </div>
+
+
+    <!-- VARIGNON -->
+    <div class="box">
+        <h2>9. Varignon's Theorem</h2>
+
+        <p>
+            Varignon's theorem states that the moment of the resultant
+            force about any point is equal to the algebraic sum of the
+            moments of its component forces about the same point.
+        </p>
+
+        <div class="formula">
+            Moment of Resultant
+            =
+            Sum of Moments of Components
+        </div>
+    </div>
+
+
+    <!-- SOLVED NUMERICAL -->
+    <div class="box">
+        <h2>10. Solved Numerical – Support Reaction</h2>
+
+        <div class="example">
+
+            <p>
+                <b>Question:</b><br>
+                A simply supported beam carries a load of 10 kN at its
+                centre. Find the reactions at both supports.
+            </p>
+
+            <p><b>Solution:</b></p>
+
+            <p>
+                Due to symmetry, the load is equally shared by both supports.
+            </p>
+
+            <div class="formula">
+                Ay = By
+            </div>
+
+            <p>
+                Total load = 10 kN
+            </p>
+
+            <p>
+                Therefore,
+            </p>
+
+            <div class="formula">
+                Ay + By = 10
+                <br><br>
+                2Ay = 10
+                <br><br>
+                Ay = 5 kN
+                <br><br>
+                By = 5 kN
+            </div>
+
+            <p>
+                <b>Answer:</b> Reaction at each support = <b>5 kN</b>
+            </p>
+
+        </div>
+    </div>
+
+
+    <!-- VVI -->
+    <div class="box">
+        <h2>11. VVI Questions</h2>
+
+        <ol>
+            <li>Define equilibrium.</li>
+            <li>What are the conditions of equilibrium?</li>
+            <li>What is a Free Body Diagram?</li>
+            <li>Explain different types of supports.</li>
+            <li>Define moment of a force.</li>
+            <li>State Lami's theorem.</li>
+            <li>State Varignon's theorem.</li>
+            <li>What is a simply supported beam?</li>
+            <li>Find support reactions for a loaded beam.</li>
+            <li>Explain static and dynamic equilibrium.</li>
+        </ol>
+    </div>
+
+
+    <!-- MCQ -->
+    <div class="box">
+        <h2>12. MCQs</h2>
+
+        <div class="mcq">
+            <b>Q1. For equilibrium, the resultant force is:</b><br>
+            A) Maximum<br>
+            B) Zero<br>
+            C) Infinite<br>
+            D) Negative<br>
+            <span class="answer">Answer: B) Zero</span>
+        </div>
+
+        <div class="mcq">
+            <b>Q2. SI unit of moment is:</b><br>
+            A) N<br>
+            B) J<br>
+            C) N·m<br>
+            D) Pa<br>
+            <span class="answer">Answer: C) N·m</span>
+        </div>
+
+        <div class="mcq">
+            <b>Q3. FBD stands for:</b><br>
+            A) Force Balance Diagram<br>
+            B) Free Body Diagram<br>
+            C) Force Body Design<br>
+            D) Free Beam Design<br>
+            <span class="answer">Answer: B) Free Body Diagram</span>
+        </div>
+
+        <div class="mcq">
+            <b>Q4. Lami's theorem is used for:</b><br>
+            A) Three concurrent forces in equilibrium<br>
+            B) Temperature<br>
+            C) Heat transfer<br>
+            D) Fluid flow<br>
+            <span class="answer">
+                Answer: A) Three concurrent forces in equilibrium
+            </span>
+        </div>
+
+        <div class="mcq">
+            <b>Q5. Moment is equal to:</b><br>
+            A) Force × Distance<br>
+            B) Force / Distance<br>
+            C) Distance / Force<br>
+            D) Force + Distance<br>
+            <span class="answer">Answer: A) Force × Distance</span>
+        </div>
+
+        <div class="mcq">
+            <b>Q6. A fixed support provides:</b><br>
+            A) Only horizontal reaction<br>
+            B) Only vertical reaction<br>
+            C) Horizontal, vertical and moment reactions<br>
+            D) No reaction<br>
+            <span class="answer">
+                Answer: C) Horizontal, vertical and moment reactions
+            </span>
+        </div>
+    </div>
+
+
+    <!-- QUICK REVISION -->
+    <div class="box">
+        <h2>13. Quick Revision</h2>
+
+        <ul>
+            <li>Equilibrium → Resultant force and moment are zero.</li>
+            <li>ΣFx = 0</li>
+            <li>ΣFy = 0</li>
+            <li>ΣM = 0</li>
+            <li>FBD → Free Body Diagram.</li>
+            <li>Moment = Force × Perpendicular Distance.</li>
+            <li>Unit of moment → N·m.</li>
+            <li>Lami's theorem → Three concurrent forces.</li>
+            <li>Varignon's theorem → Moment of resultant.</li>
+            <li>Simply supported beam → Pin + Roller support.</li>
+        </ul>
+    </div>
+
+
+    <a class="top-btn" href="#">
+        ↑ Back to Top
+    </a>
+
+</div>
+
+<footer>
+    <p>© 2026 Engineering Notes | BEU Students</p>
+</footer>
+
+</body>
+</html>
