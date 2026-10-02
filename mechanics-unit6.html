@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Engineering Mechanics - Unit 6</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f8;
+    margin:0;
+    line-height:1.7;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+header h1{
+    margin:0;
+}
+
+.container{
+    width:92%;
+    max-width:900px;
+    margin:25px auto;
+}
+
+.back{
+    color:#1e3a8a;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.box{
+    background:white;
+    margin:20px 0;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 2px 8px #ccc;
+}
+
+h2{
+    color:#1e3a8a;
+    border-bottom:2px solid #ddd;
+    padding-bottom:8px;
+}
+
+h3{
+    color:#333;
+}
+
+.formula{
+    background:#eef2ff;
+    padding:15px;
+    border-left:5px solid #1e3a8a;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.example{
+    background:#f0fdf4;
+    padding:15px;
+    border-left:5px solid green;
+}
+
+.important{
+    background:#fff7ed;
+    padding:15px;
+    border-left:5px solid orange;
+}
+
+.mcq{
+    background:#fafafa;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:green;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:15px 0;
+}
+
+th,td{
+    border:1px solid #999;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#eef2ff;
+}
+
+.top-btn{
+    display:inline-block;
+    background:#1e3a8a;
+    color:white;
+    padding:10px 16px;
+    text-decoration:none;
+    border-radius:7px;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Engineering Mechanics</h1>
+    <p>Unit 6 – Moment of Inertia</p>
+</header>
+
+<div class="container">
+
+<a class="back" href="mechanics-notes.html">
+← Back to Mechanics Notes
+</a>
+
+
+<!-- INTRODUCTION -->
+<div class="box">
+<h2>1. Introduction</h2>
+
+<p>
+The <b>Moment of Inertia (M.I.)</b> of an area about an axis is
+a measure of how the area is distributed with respect to that axis.
+</p>
+
+<p>
+Moment of inertia is very important in the analysis of beams,
+shafts and structural members.
+</p>
+
+<div class="formula">
+I = Σ(A × d²)
+</div>
+
+<p>
+For a continuous area:
+</p>
+
+<div class="formula">
+I = ∫ y² dA
+</div>
+
+</div>
+
+
+<!-- MASS MOMENT -->
+<div class="box">
+<h2>2. Mass Moment of Inertia</h2>
+
+<p>
+Mass moment of inertia is the resistance of a body to angular
+acceleration about a particular axis.
+</p>
+
+<div class="formula">
+I = ∫ r² dm
+</div>
+
+<p>Where:</p>
+
+<ul>
+<li>I = Mass moment of inertia</li>
+<li>r = Distance from the axis</li>
+<li>dm = Small element of mass</li>
+</ul>
+</div>
+
+
+<!-- AREA MOMENT -->
+<div class="box">
+<h2>3. Area Moment of Inertia</h2>
+
+<p>
+Area moment of inertia is used mainly in engineering mechanics
+and structural analysis.
+</p>
+
+<div class="formula">
+I<sub>x</sub> = ∫ y² dA
+<br><br>
+I<sub>y</sub> = ∫ x² dA
+</div>
+
+<p>
+Here, x and y represent the perpendicular distances from
+the respective axes.
+</p>
+</div>
+
+
+<!-- UNITS -->
+<div class="box">
+<h2>4. Unit and Dimension</h2>
+
+<p>
+For area moment of inertia:
+</p>
+
+<div class="formula">
+SI Unit = m⁴
+</div>
+
+<p>
+The dimensional formula is:
+</p>
+
+<div class="formula">
+[L⁴]
+</div>
+
+<div class="important">
+<b>Remember:</b><br>
+Area → m²<br>
+Moment of Area → m³<br>
+Moment of Inertia of Area → m⁴
+</div>
+</div>
+
+
+<!-- RECTANGLE -->
+<div class="box">
+<h2>5. M.I. of Rectangle</h2>
+
+<p>
+For a rectangle of breadth <b>b</b> and depth <b>d</b>:
+</p>
+
+<h3>About the Centroidal X-axis</h3>
+
+<div class="formula">
+I<sub>x</sub> = bd³ / 12
+</div>
+
+<h3>About the Centroidal Y-axis</h3>
+
+<div class="formula">
+I<sub>y</sub> = db³ / 12
+</div>
+</div>
+
+
+<!-- CIRCLE -->
+<div class="box">
+<h2>6. M.I. of Circle</h2>
+
+<p>
+For a circular area of radius <b>r</b>:
+</p>
+
+<div class="formula">
+I<sub>x</sub> = I<sub>y</sub> = πr⁴ / 4
+</div>
+
+<p>
+In terms of diameter <b>d</b>:
+</p>
+
+<div class="formula">
+I = πd⁴ / 64
+</div>
+</div>
+
+
+<!-- TRIANGLE -->
+<div class="box">
+<h2>7. M.I. of Triangle</h2>
+
+<p>
+For a triangle of base <b>b</b> and height <b>h</b>, the moment
+of inertia about its base is:
+</p>
+
+<div class="formula">
+I<sub>base</sub> = bh³ / 12
+</div>
+
+<p>
+About an axis through the centroid parallel to the base:
+</p>
+
+<div class="formula">
+I<sub>G</sub> = bh³ / 36
+</div>
+</div>
+
+
+<!-- PARALLEL AXIS -->
+<div class="box">
+<h2>8. Parallel Axis Theorem</h2>
+
+<p>
+The parallel axis theorem is used to find the moment of inertia
+about an axis parallel to the centroidal axis.
+</p>
+
+<div class="formula">
+I = I<sub>G</sub> + Ah²
+</div>
+
+<p>Where:</p>
+
+<ul>
+<li>I = M.I. about the required axis</li>
+<li>I<sub>G</sub> = M.I. about centroidal axis</li>
+<li>A = Area of the body</li>
+<li>h = Distance between the two parallel axes</li>
+</ul>
+</div>
+
+
+<!-- PERPENDICULAR AXIS -->
+<div class="box">
+<h2>9. Perpendicular Axis Theorem</h2>
+
+<p>
+For a plane lamina, the moment of inertia about an axis perpendicular
+to its plane is equal to the sum of the moments of inertia about
+two mutually perpendicular axes lying in the plane.
+</p>
+
+<div class="formula">
+I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub>
+</div>
+
+<div class="important">
+This theorem is applicable to plane areas.
+</div>
+</div>
+
+
+<!-- RADIUS OF GYRATION -->
+<div class="box">
+<h2>10. Radius of Gyration</h2>
+
+<p>
+The radius of gyration is the distance from an axis at which the
+whole area or mass may be assumed to be concentrated without
+changing its moment of inertia.
+</p>
+
+<div class="formula">
+I = Ak²
+</div>
+
+<p>Therefore:</p>
+
+<div class="formula">
+k = √(I/A)
+</div>
+
+<p>Where:</p>
+
+<ul>
+<li>k = Radius of gyration</li>
+<li>I = Moment of inertia</li>
+<li>A = Area</li>
+</ul>
+</div>
+
+
+<!-- SECTION PROPERTIES -->
+<div class="box">
+<h2>11. Important Formula Table</h2>
+
+<table>
+<tr>
+<th>Shape</th>
+<th>Moment of Inertia</th>
+</tr>
+
+<tr>
+<td>Rectangle about centroidal X-axis</td>
+<td>bd³ / 12</td>
+</tr>
+
+<tr>
+<td>Rectangle about centroidal Y-axis</td>
+<td>db³ / 12</td>
+</tr>
+
+<tr>
+<td>Circle</td>
+<td>πr⁴ / 4</td>
+</tr>
+
+<tr>
+<td>Circle in diameter form</td>
+<td>πd⁴ / 64</td>
+</tr>
+
+<tr>
+<td>Triangle about base</td>
+<td>bh³ / 12</td>
+</tr>
+
+<tr>
+<td>Triangle about centroidal axis</td>
+<td>bh³ / 36</td>
+</tr>
+</table>
+</div>
+
+
+<!-- COMPOSITE AREA -->
+<div class="box">
+<h2>12. M.I. of Composite Areas</h2>
+
+<p>
+A complex area can be divided into simple shapes such as rectangles,
+triangles and circles.
+</p>
+
+<h3>Steps:</h3>
+
+<ol>
+<li>Divide the given area into simple shapes.</li>
+<li>Find the area of each part.</li>
+<li>Locate the centroid of each part.</li>
+<li>Calculate the individual M.I.</li>
+<li>Apply the parallel axis theorem where required.</li>
+<li>Add the moments of inertia of all parts.</li>
+</ol>
+
+<div class="formula">
+I<sub>Total</sub> = Σ(I<sub>G</sub> + Ah²)
+</div>
+</div>
+
+
+<!-- SOLVED NUMERICAL -->
+<div class="box">
+<h2>13. Solved Numerical</h2>
+
+<div class="example">
+
+<p>
+<b>Question:</b><br>
+Find the moment of inertia of a rectangular area about its
+centroidal X-axis if its breadth is 100 mm and depth is 200 mm.
+</p>
+
+<p><b>Given:</b></p>
+
+<div class="formula">
+b = 100 mm
+<br>
+d = 200 mm
+</div>
+
+<p>
+For a rectangle:
+</p>
+
+<div class="formula">
+I<sub>x</sub> = bd³ / 12
+</div>
+
+<p>
+Substituting:
+</p>
+
+<div class="formula">
+I<sub>x</sub>
+=
+(100 × 200³) / 12
+</div>
+
+<div class="formula">
+200³ = 8,000,000
+</div>
+
+<div class="formula">
+I<sub>x</sub>
+=
+800,000,000 / 12
+</div>
+
+<div class="formula">
+I<sub>x</sub>
+=
+66,666,666.67 mm⁴
+</div>
+
+<p>
+<b>Answer:</b>
+</p>
+
+<p>
+Moment of inertia =
+<b>6.667 × 10⁷ mm⁴</b>
+</p>
+
+</div>
+</div>
+
+
+<!-- VVI -->
+<div class="box">
+<h2>14. VVI Questions</h2>
+
+<ol>
+<li>Define moment of inertia.</li>
+<li>What is area moment of inertia?</li>
+<li>What is mass moment of inertia?</li>
+<li>Write the SI unit and dimensional formula of M.I.</li>
+<li>Derive the M.I. of a rectangle about its centroidal axis.</li>
+<li>Write the M.I. of a circle.</li>
+<li>Write the M.I. of a triangle.</li>
+<li>State the parallel axis theorem.</li>
+<li>State the perpendicular axis theorem.</li>
+<li>Define radius of gyration.</li>
+<li>Find M.I. of a composite area.</li>
+<li>Solve numerical problems based on M.I.</li>
+</ol>
+</div>
+
+
+<!-- MCQs -->
+<div class="box">
+<h2>15. MCQs</h2>
+
+<div class="mcq">
+<b>Q1. SI unit of area moment of inertia is:</b><br>
+A) m<br>
+B) m²<br>
+C) m³<br>
+D) m⁴<br>
+<span class="answer">Answer: D) m⁴</span>
+</div>
+
+<div class="mcq">
+<b>Q2. M.I. of a rectangle about its centroidal X-axis is:</b><br>
+A) bd²/12<br>
+B) bd³/12<br>
+C) b²d/12<br>
+D) bd/12<br>
+<span class="answer">Answer: B) bd³/12</span>
+</div>
+
+<div class="mcq">
+<b>Q3. M.I. of a circular area about its centroidal diameter is:</b><br>
+A) πr²/4<br>
+B) πr³/4<br>
+C) πr⁴/4<br>
+D) πr⁴/2<br>
+<span class="answer">Answer: C) πr⁴/4</span>
+</div>
+
+<div class="mcq">
+<b>Q4. Parallel axis theorem is:</b><br>
+A) I = IG - Ah²<br>
+B) I = IG + Ah²<br>
+C) I = IG/A<br>
+D) I = Ah²<br>
+<span class="answer">Answer: B) I = IG + Ah²</span>
+</div>
+
+<div class="mcq">
+<b>Q5. Perpendicular axis theorem is:</b><br>
+A) Iz = Ix + Iy<br>
+B) Iz = Ix - Iy<br>
+C) Iz = Ix × Iy<br>
+D) Iz = Ix/Iy<br>
+<span class="answer">Answer: A) Iz = Ix + Iy</span>
+</div>
+
+<div class="mcq">
+<b>Q6. Radius of gyration is given by:</b><br>
+A) k = I/A<br>
+B) k = √(I/A)<br>
+C) k = A/I<br>
+D) k = IA<br>
+<span class="answer">Answer: B) k = √(I/A)</span>
+</div>
+</div>
+
+
+<!-- QUICK REVISION -->
+<div class="box">
+<h2>16. Quick Revision</h2>
+
+<ul>
+<li>Moment of Inertia → Resistance to bending/rotation about an axis.</li>
+<li>Area M.I. → Unit m⁴.</li>
+<li>Dimension → L⁴.</li>
+<li>Rectangle: I<sub>x</sub> = bd³/12.</li>
+<li>Rectangle: I<sub>y</sub> = db³/12.</li>
+<li>Circle: I = πr⁴/4.</li>
+<li>Triangle about base: I = bh³/12.</li>
+<li>Parallel Axis Theorem: I = I<sub>G</sub> + Ah².</li>
+<li>Perpendicular Axis Theorem: I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub>.</li>
+<li>Radius of gyration: k = √(I/A).</li>
+</ul>
+</div>
+
+
+<a class="top-btn" href="#">↑ Back to Top</a>
+
+</div>
+
+<footer>
+<p>© 2026 Engineering Notes | BEU Students</p>
+</footer>
+
+</body>
+</html>
