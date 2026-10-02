@@ -1,143 +1,349 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Engineering Mechanics - Unit 1</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: #f4f6f8;
             margin: 0;
-            background-color: #f4f7fb;
             line-height: 1.6;
         }
 
-        .navbar {
-            background-color: #1e3a8a;
-            padding: 18px;
-            text-align: center;
-        }
-
-        .navbar a {
+        header {
+            background: #1e3a8a;
             color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px #cccccc;
-        }
-
-        h1 {
-            color: #1e3a8a;
             text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: 25px auto;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 18px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #ccc;
         }
 
         h2 {
             color: #1e3a8a;
-            border-bottom: 2px solid #1e3a8a;
-            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #333;
         }
 
         .formula {
-            background-color: #eef4ff;
-            padding: 15px;
-            border-radius: 8px;
+            background: #eef2ff;
+            padding: 12px;
+            border-left: 5px solid #1e3a8a;
+            margin: 10px 0;
             font-weight: bold;
+        }
+
+        .important {
+            background: #fff7ed;
+            padding: 12px;
+            border-left: 5px solid orange;
+        }
+
+        .back {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+
+        li {
+            margin: 7px 0;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="semester3.html">3rd Semester</a>
-        <a href="mechanics.html">Engineering Mechanics</a>
-        <a href="mechanics-notes.html">Notes</a>
+<header>
+    <h1>Engineering Mechanics</h1>
+    <p>Unit 1 – Units & Dimensions</p>
+</header>
+
+<div class="container">
+
+    <a class="back" href="mechanics-notes.html">
+        ← Back to Unit List
+    </a>
+
+    <div class="box">
+        <h2>1. Physical Quantities</h2>
+        <p>
+            A physical quantity is a quantity that can be measured and
+            expressed by a numerical value and a unit.
+        </p>
+
+        <p><b>Example:</b> Length = 5 metre</p>
+        <p>Here, 5 is the numerical value and metre is the unit.</p>
     </div>
 
-    <div class="content">
-
-        <h1>Engineering Mechanics - Unit 1</h1>
-
-        <h2>1. Fundamental Units</h2>
+    <div class="box">
+        <h2>2. Fundamental Quantities</h2>
 
         <p>
-            Fundamental units are basic units which are independent
-            of other units.
+            Fundamental quantities are independent physical quantities
+            which cannot be expressed in terms of other quantities.
         </p>
+
+        <ul>
+            <li>Length – metre (m)</li>
+            <li>Mass – kilogram (kg)</li>
+            <li>Time – second (s)</li>
+            <li>Electric current – ampere (A)</li>
+            <li>Temperature – kelvin (K)</li>
+            <li>Amount of substance – mole (mol)</li>
+            <li>Luminous intensity – candela (cd)</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>3. Derived Quantities</h2>
 
         <p>
-            Examples: metre (m), kilogram (kg), second (s).
+            Quantities which are obtained from fundamental quantities
+            are called derived quantities.
         </p>
 
+        <ul>
+            <li>Velocity = Length / Time</li>
+            <li>Acceleration = Length / Time²</li>
+            <li>Force = Mass × Acceleration</li>
+            <li>Work = Force × Distance</li>
+            <li>Pressure = Force / Area</li>
+        </ul>
+    </div>
 
-        <h2>2. Derived Units</h2>
+    <div class="box">
+        <h2>4. SI Units</h2>
 
         <p>
-            Derived units are obtained by combining fundamental units.
+            SI stands for International System of Units.
+            It is the internationally accepted system of measurement.
         </p>
 
-        <p>
-            Example: Force = mass × acceleration
-        </p>
+        <ul>
+            <li>Length → metre (m)</li>
+            <li>Mass → kilogram (kg)</li>
+            <li>Time → second (s)</li>
+            <li>Force → newton (N)</li>
+            <li>Energy → joule (J)</li>
+            <li>Power → watt (W)</li>
+            <li>Pressure → pascal (Pa)</li>
+        </ul>
+    </div>
 
-        <div class="formula">
-            F = ma
-        </div>
-
-
-        <h2>3. Dimensions</h2>
+    <div class="box">
+        <h2>5. Dimensions</h2>
 
         <p>
             Dimensions represent a physical quantity in terms of
-            fundamental quantities.
+            fundamental quantities such as Mass (M), Length (L)
+            and Time (T).
         </p>
 
+        <p><b>Example:</b></p>
+
+        <div class="formula">
+            Velocity = LT⁻¹
+        </div>
+
+        <div class="formula">
+            Acceleration = LT⁻²
+        </div>
+
+        <div class="formula">
+            Force = MLT⁻²
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>6. Dimensional Formula</h2>
+
         <p>
-            Dimension of force:
+            The expression which shows the powers of fundamental
+            quantities involved in a physical quantity is called
+            its dimensional formula.
+        </p>
+
+        <h3>Important Dimensional Formulae</h3>
+
+        <div class="formula">
+            Velocity = [M⁰L¹T⁻¹]
+        </div>
+
+        <div class="formula">
+            Acceleration = [M⁰L¹T⁻²]
+        </div>
+
+        <div class="formula">
+            Force = [M¹L¹T⁻²]
+        </div>
+
+        <div class="formula">
+            Work = [M¹L²T⁻²]
+        </div>
+
+        <div class="formula">
+            Power = [M¹L²T⁻³]
+        </div>
+
+        <div class="formula">
+            Pressure = [M¹L⁻¹T⁻²]
+        </div>
+
+        <div class="formula">
+            Density = [M¹L⁻³T⁰]
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>7. Dimensional Equation</h2>
+
+        <p>
+            An equation which represents a physical quantity in terms
+            of its dimensions is called a dimensional equation.
         </p>
 
         <div class="formula">
-            [F] = [M L T⁻²]
+            Force = [M¹L¹T⁻²]
         </div>
+    </div>
 
-
-        <h2>4. Principle of Homogeneity</h2>
+    <div class="box">
+        <h2>8. Principle of Homogeneity</h2>
 
         <p>
             According to the principle of homogeneity, the dimensions
-            of every term in a physical equation must be the same.
+            of every term on both sides of a physical equation must
+            be the same.
         </p>
 
-
-        <h2>5. Dimensional Analysis</h2>
-
-        <p>
-            Dimensional analysis is used to check the correctness
-            of physical equations and to derive relationships
-            between physical quantities.
-        </p>
-
-
-        <h2>Important Questions</h2>
-
-        <ol>
-            <li>Define fundamental and derived units.</li>
-            <li>What is dimensional formula?</li>
-            <li>Explain the principle of homogeneity.</li>
-            <li>What is dimensional analysis?</li>
-            <li>Find the dimensional formula of force.</li>
-        </ol>
-
+        <div class="important">
+            Example: s = ut + ½at²
+            <br><br>
+            Dimension of s = L
+            <br>
+            Dimension of ut = LT⁻¹ × T = L
+            <br>
+            Dimension of at² = LT⁻² × T² = L
+        </div>
     </div>
 
-</body>
+    <div class="box">
+        <h2>9. Dimensional Analysis</h2>
 
+        <p>
+            Dimensional analysis is a mathematical method used to
+            study the relationship between physical quantities using
+            their dimensions.
+        </p>
+
+        <h3>Uses</h3>
+
+        <ul>
+            <li>To check dimensional correctness of an equation.</li>
+            <li>To derive a relation between physical quantities.</li>
+            <li>To convert units from one system to another.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>10. Applications of Dimensional Analysis</h2>
+
+        <ul>
+            <li>Checking the correctness of equations.</li>
+            <li>Deriving physical relations.</li>
+            <li>Converting units.</li>
+            <li>Finding dimensions of unknown quantities.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>11. Limitations of Dimensional Analysis</h2>
+
+        <ul>
+            <li>It cannot determine numerical constants.</li>
+            <li>It cannot determine whether terms are added or subtracted.</li>
+            <li>It cannot be used directly for trigonometric functions.</li>
+            <li>It cannot distinguish quantities having the same dimensions.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>12. Important Formulae</h2>
+
+        <div class="formula">
+            Force = Mass × Acceleration
+        </div>
+
+        <div class="formula">
+            Work = Force × Distance
+        </div>
+
+        <div class="formula">
+            Power = Work / Time
+        </div>
+
+        <div class="formula">
+            Pressure = Force / Area
+        </div>
+
+        <div class="formula">
+            Density = Mass / Volume
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>13. VVI Questions</h2>
+
+        <ol>
+            <li>What are fundamental quantities?</li>
+            <li>What are derived quantities?</li>
+            <li>Define dimensions.</li>
+            <li>What is dimensional formula?</li>
+            <li>State the principle of homogeneity.</li>
+            <li>What is dimensional analysis?</li>
+            <li>Write the dimensional formula of force.</li>
+            <li>Write the dimensional formula of work.</li>
+            <li>Write the dimensional formula of power.</li>
+            <li>Write the applications and limitations of dimensional analysis.</li>
+        </ol>
+    </div>
+
+    <div class="box">
+        <h2>14. Quick Revision</h2>
+
+        <div class="important">
+            <b>Remember:</b>
+            <br><br>
+            Force → MLT⁻²
+            <br>
+            Work → ML²T⁻²
+            <br>
+            Power → ML²T⁻³
+            <br>
+            Pressure → ML⁻¹T⁻²
+            <br>
+            Velocity → LT⁻¹
+            <br>
+            Acceleration → LT⁻²
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
