@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Engineering Mechanics MCQ</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        .navbar {
+            background-color: #1e3a8a;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .question {
+            background-color: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #cccccc;
+        }
+
+        .question h2 {
+            color: #1e3a8a;
+            font-size: 20px;
+        }
+
+        label {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin: 25px;
+        }
+
+        .submit {
+            display: block;
+            margin: 30px auto;
+            padding: 14px 30px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="semester3.html">3rd Semester</a>
+        <a href="mechanics.html">Engineering Mechanics</a>
+    </div>
+
+
+    <div class="container">
+
+        <h1>Engineering Mechanics MCQ</h1>
+
+        <div class="question">
+            <h2>Q1. The SI unit of force is:</h2>
+
+            <label>
+                <input type="radio" name="q1" value="A">
+                A. Joule
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="B">
+                B. Newton
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="C">
+                C. Watt
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="D">
+                D. Pascal
+            </label>
+        </div>
+
+
+        <div class="question">
+            <h2>Q2. Force is a:</h2>
+
+            <label>
+                <input type="radio" name="q2" value="A">
+                A. Scalar quantity
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="B">
+                B. Vector quantity
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="C">
+                C. Constant quantity
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="D">
+                D. Dimensionless quantity
+            </label>
+        </div>
+
+
+        <div class="question">
+            <h2>Q3. The dimensional formula of force is:</h2>
+
+            <label>
+                <input type="radio" name="q3" value="A">
+                A. ML²T⁻²
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="B">
+                B. MLT⁻²
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="C">
+                C. MLT⁻¹
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="D">
+                D. M²LT⁻²
+            </label>
+        </div>
+
+
+        <button class="submit" onclick="checkAnswers()">
+            Submit Answers
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <script>
+
+        function checkAnswers() {
+
+            let score = 0;
+
+            let q1 = document.querySelector(
+                'input[name="q1"]:checked'
+            );
+
+            let q2 = document.querySelector(
+                'input[name="q2"]:checked'
+            );
+
+            let q3 = document.querySelector(
+                'input[name="q3"]:checked'
+            );
+
+
+            if (q1 && q1.value === "B") {
+                score++;
+            }
+
+            if (q2 && q2.value === "B") {
+                score++;
+            }
+
+            if (q3 && q3.value === "B") {
+                score++;
+            }
+
+
+            document.getElementById("result").innerHTML =
+                "Your Score: " + score + " / 3";
+        }
+
+    </script>
+
+</body>
+
+</html>
