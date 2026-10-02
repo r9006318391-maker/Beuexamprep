@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3rd Semester - EngiPrep Bihar</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        .navbar {
+            background-color: #1e3a8a;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .heading h1 {
+            color: #1e3a8a;
+            font-size: 36px;
+        }
+
+        .subjects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .subject {
+            background-color: white;
+            width: 230px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px #cccccc;
+        }
+
+        .subject h2 {
+            color: #1e3a8a;
+        }
+
+        .subject button {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <a href="index.html">Home</a>
+
+    </div>
+
+
+    <div class="heading">
+
+        <h1>B.Tech 3rd Semester</h1>
+
+        <p>Select Your Subject</p>
+
+    </div>
+
+
+    <div class="subjects">
+
+
+        <!-- Engineering Mechanics -->
+
+        <div class="subject">
+
+            <h2>Engineering Mechanics</h2>
+
+            <p>Notes • PYQ • MCQ</p>
+
+            <a href="mechanics.html">
+
+                <button>Open</button>
+
+            </a>
+
+        </div>
+
+
+        <!-- Thermodynamics -->
+
+        <div class="subject">
+
+            <h2>Thermodynamics</h2>
+
+            <p>Notes • PYQ • MCQ</p>
+
+            <button>Open</button>
+
+        </div>
+
+
+        <!-- Materials Science -->
+
+        <div class="subject">
+
+            <h2>Materials Science</h2>
+
+            <p>Notes • PYQ • MCQ</p>
+
+            <button>Open</button>
+
+        </div>
+
+
+        <!-- Basic Electronics -->
+
+        <div class="subject">
+
+            <h2>Basic Electronics</h2>
+
+            <p>Notes • PYQ • MCQ</p>
+
+            <button>Open</button>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
