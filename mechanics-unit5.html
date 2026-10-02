@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Engineering Mechanics - Unit 5</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f8;
+    margin:0;
+    line-height:1.7;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+.container{
+    width:92%;
+    max-width:900px;
+    margin:25px auto;
+}
+
+.back{
+    color:#1e3a8a;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.box{
+    background:white;
+    margin:20px 0;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 2px 8px #ccc;
+}
+
+h2{
+    color:#1e3a8a;
+    border-bottom:2px solid #ddd;
+    padding-bottom:8px;
+}
+
+h3{
+    color:#333;
+}
+
+.formula{
+    background:#eef2ff;
+    padding:15px;
+    border-left:5px solid #1e3a8a;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.example{
+    background:#f0fdf4;
+    padding:15px;
+    border-left:5px solid green;
+}
+
+.important{
+    background:#fff7ed;
+    padding:15px;
+    border-left:5px solid orange;
+}
+
+.mcq{
+    background:#fafafa;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:green;
+    font-weight:bold;
+}
+
+.top-btn{
+    display:inline-block;
+    background:#1e3a8a;
+    color:white;
+    padding:10px 16px;
+    text-decoration:none;
+    border-radius:7px;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Engineering Mechanics</h1>
+    <p>Unit 5 – Centroid & Centre of Gravity</p>
+</header>
+
+<div class="container">
+
+<a class="back" href="mechanics-notes.html">
+← Back to Mechanics Notes
+</a>
+
+
+<!-- INTRODUCTION -->
+<div class="box">
+<h2>1. Introduction</h2>
+
+<p>
+The <b>centroid</b> is the geometrical centre of a plane figure.
+It is the point at which the entire area of the figure may be
+considered to be concentrated.
+</p>
+
+<p>
+The <b>centre of gravity</b> is the point through which the
+entire weight of a body acts.
+</p>
+
+<div class="important">
+<b>Exam Point:</b><br>
+Centroid is related mainly to area and geometry, while centre
+of gravity is related to mass and weight.
+</div>
+</div>
+
+
+<!-- CENTROID -->
+<div class="box">
+<h2>2. Centroid</h2>
+
+<p>
+The centroid of a plane area is the point where the geometrical
+centre of the area lies.
+</p>
+
+<p>
+For a symmetrical uniform body, the centroid lies on its
+axis of symmetry.
+</p>
+</div>
+
+
+<!-- CENTRE OF GRAVITY -->
+<div class="box">
+<h2>3. Centre of Gravity</h2>
+
+<p>
+The centre of gravity is the point at which the complete weight
+of a body is assumed to act.
+</p>
+
+<p>
+For a uniform body having regular shape, the centre of gravity
+usually coincides with its geometrical centre.
+</p>
+</div>
+
+
+<!-- DIFFERENCE -->
+<div class="box">
+<h2>4. Difference Between Centroid and Centre of Gravity</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<tr>
+<th>Centroid</th>
+<th>Centre of Gravity</th>
+</tr>
+
+<tr>
+<td>Related to geometrical area.</td>
+<td>Related to weight of a body.</td>
+</tr>
+
+<tr>
+<td>Used mainly for plane figures.</td>
+<td>Used for physical bodies.</td>
+</tr>
+
+<tr>
+<td>Depends on shape and geometry.</td>
+<td>Depends on mass distribution and gravity.</td>
+</tr>
+</table>
+</div>
+
+
+<!-- COORDINATES -->
+<div class="box">
+<h2>5. Centroid Coordinates</h2>
+
+<p>
+For a plane area divided into several simple areas:
+</p>
+
+<div class="formula">
+x̄ = Σ(Ax) / ΣA
+<br><br>
+ȳ = Σ(Ay) / ΣA
+</div>
+
+<p>Where:</p>
+
+<ul>
+<li>A = Area of each part</li>
+<li>x = Distance of the centroid from Y-axis</li>
+<li>y = Distance of the centroid from X-axis</li>
+<li>x̄ = X-coordinate of total centroid</li>
+<li>ȳ = Y-coordinate of total centroid</li>
+</ul>
+</div>
+
+
+<!-- COMPOSITE AREA -->
+<div class="box">
+<h2>6. Centroid of Composite Areas</h2>
+
+<p>
+A complicated plane figure can be divided into simple geometrical
+figures such as:
+</p>
+
+<ul>
+<li>Rectangle</li>
+<li>Triangle</li>
+<li>Circle</li>
+<li>Semicircle</li>
+<li>Quarter circle</li>
+</ul>
+
+<p>
+The centroid of the complete figure can then be calculated using
+the area-moment method.
+</p>
+
+<div class="formula">
+x̄ = ΣAx / ΣA
+<br><br>
+ȳ = ΣAy / ΣA
+</div>
+</div>
+
+
+<!-- RECTANGLE -->
+<div class="box">
+<h2>7. Centroid of Rectangle</h2>
+
+<p>
+For a rectangle of width <b>b</b> and height <b>h</b>, the centroid
+lies at its geometrical centre.
+</p>
+
+<div class="formula">
+x̄ = b/2
+<br><br>
+ȳ = h/2
+</div>
+</div>
+
+
+<!-- TRIANGLE -->
+<div class="box">
+<h2>8. Centroid of Triangle</h2>
+
+<p>
+The centroid of a triangle lies at the intersection of its
+medians.
+</p>
+
+<p>
+It is located at a distance of:
+</p>
+
+<div class="formula">
+h/3 from the base
+<br><br>
+or
+<br><br>
+2h/3 from the opposite vertex
+</div>
+
+<div class="important">
+For a triangle, centroid divides each median in the ratio
+<b>2 : 1</b>.
+</div>
+</div>
+
+
+<!-- CIRCLE -->
+<div class="box">
+<h2>9. Centroid of Circle</h2>
+
+<p>
+The centroid of a circle lies at its centre.
+</p>
+
+<div class="formula">
+x̄ = Centre of circle
+<br><br>
+ȳ = Centre of circle
+</div>
+</div>
+
+
+<!-- SEMICIRCLE -->
+<div class="box">
+<h2>10. Centroid of a Semicircle</h2>
+
+<p>
+For a semicircle of radius <b>r</b>, the centroid lies on its
+axis of symmetry.
+</p>
+
+<div class="formula">
+Distance of centroid from diameter:
+<br><br>
+ȳ = 4r / 3π
+</div>
+
+<p>
+The centroid lies along the axis of symmetry.
+</p>
+</div>
+
+
+<!-- COMPOSITE AREA METHOD -->
+<div class="box">
+<h2>11. Steps to Find Centroid of Composite Area</h2>
+
+<ol>
+<li>Divide the given figure into simple geometrical areas.</li>
+<li>Find the area of each part.</li>
+<li>Locate the centroid of each part.</li>
+<li>Measure x and y coordinates.</li>
+<li>Calculate Ax and Ay.</li>
+<li>Use the centroid equations.</li>
+<li>Obtain the final x̄ and ȳ.</li>
+</ol>
+
+<div class="formula">
+x̄ = ΣAx / ΣA
+<br><br>
+ȳ = ΣAy / ΣA
+</div>
+</div>
+
+
+<!-- CENTRE OF GRAVITY -->
+<div class="box">
+<h2>12. Centre of Gravity of Composite Bodies</h2>
+
+<p>
+For a body made of several parts, the centre of gravity can be
+calculated using the weighted average of the positions of the
+individual parts.
+</p>
+
+<div class="formula">
+x̄ = ΣWx / ΣW
+<br><br>
+ȳ = ΣWy / ΣW
+</div>
+
+<p>
+Where W represents the weight of each part.
+</p>
+</div>
+
+
+<!-- SYMMETRY -->
+<div class="box">
+<h2>13. Symmetry and Centroid</h2>
+
+<p>
+If a plane figure has an axis of symmetry, its centroid must lie
+on that axis.
+</p>
+
+<p>
+If a figure has two axes of symmetry, the centroid lies at their
+point of intersection.
+</p>
+
+<div class="important">
+<b>Example:</b><br>
+The centroid of a rectangle lies at the intersection of its
+horizontal and vertical axes of symmetry.
+</div>
+</div>
+
+
+<!-- SOLVED NUMERICAL -->
+<div class="box">
+<h2>14. Solved Numerical</h2>
+
+<div class="example">
+
+<p>
+<b>Question:</b><br>
+Find the centroid of a rectangle of width 100 mm and height
+200 mm.
+</p>
+
+<p><b>Solution:</b></p>
+
+<p>
+For a rectangle, centroid lies at its centre.
+</p>
+
+<div class="formula">
+x̄ = b/2
+<br><br>
+x̄ = 100/2
+<br><br>
+x̄ = 50 mm
+</div>
+
+<div class="formula">
+ȳ = h/2
+<br><br>
+ȳ = 200/2
+<br><br>
+ȳ = 100 mm
+</div>
+
+<p>
+<b>Answer:</b>
+</p>
+
+<p>
+Centroid = <b>(50 mm, 100 mm)</b>
+</p>
+
+</div>
+</div>
+
+
+<!-- VVI -->
+<div class="box">
+<h2>15. VVI Questions</h2>
+
+<ol>
+<li>Define centroid.</li>
+<li>Define centre of gravity.</li>
+<li>Differentiate between centroid and centre of gravity.</li>
+<li>Find the centroid of a rectangle.</li>
+<li>Find the centroid of a triangle.</li>
+<li>Find the centroid of a circle.</li>
+<li>Write the formula for centroid of a semicircle.</li>
+<li>Explain the method of finding centroid of composite areas.</li>
+<li>Explain the importance of symmetry in locating centroid.</li>
+<li>Solve numerical problems based on composite areas.</li>
+</ol>
+</div>
+
+
+<!-- MCQs -->
+<div class="box">
+<h2>16. MCQs</h2>
+
+<div class="mcq">
+<b>Q1. The centroid represents the geometrical centre of:</b><br>
+A) Volume only<br>
+B) Plane area<br>
+C) Temperature<br>
+D) Pressure<br>
+<span class="answer">Answer: B) Plane area</span>
+</div>
+
+<div class="mcq">
+<b>Q2. The centroid of a rectangle lies at:</b><br>
+A) One corner<br>
+B) Midpoint of one side<br>
+C) Geometrical centre<br>
+D) Outside the rectangle<br>
+<span class="answer">Answer: C) Geometrical centre</span>
+</div>
+
+<div class="mcq">
+<b>Q3. The centroid of a triangle lies at the intersection of:</b><br>
+A) Sides<br>
+B) Medians<br>
+C) Altitudes only<br>
+D) Diagonals<br>
+<span class="answer">Answer: B) Medians</span>
+</div>
+
+<div class="mcq">
+<b>Q4. The centroid of a circle is located at:</b><br>
+A) Circumference<br>
+B) Centre<br>
+C) Outside circle<br>
+D) Diameter end<br>
+<span class="answer">Answer: B) Centre</span>
+</div>
+
+<div class="mcq">
+<b>Q5. The formula for X-coordinate of composite centroid is:</b><br>
+A) ΣA/ΣAx<br>
+B) ΣAx/ΣA<br>
+C) Σx/ΣA<br>
+D) ΣA×x<br>
+<span class="answer">Answer: B) ΣAx/ΣA</span>
+</div>
+
+<div class="mcq">
+<b>Q6. The centroid of a symmetrical body lies on:</b><br>
+A) Axis of symmetry<br>
+B) Boundary only<br>
+C) Outside the body<br>
+D) Random point<br>
+<span class="answer">Answer: A) Axis of symmetry</span>
+</div>
+</div>
+
+
+<!-- QUICK REVISION -->
+<div class="box">
+<h2>17. Quick Revision</h2>
+
+<ul>
+<li>Centroid → Geometrical centre of a plane area.</li>
+<li>Centre of gravity → Point through which weight acts.</li>
+<li>Rectangle → Centroid at centre.</li>
+<li>Triangle → Centroid at intersection of medians.</li>
+<li>Circle → Centroid at centre.</li>
+<li>Triangle centroid → h/3 from base.</li>
+<li>Semicircle → 4r/3π from diameter.</li>
+<li>x̄ = ΣAx/ΣA</li>
+<li>ȳ = ΣAy/ΣA</li>
+<li>Symmetry helps locate centroid easily.</li>
+</ul>
+</div>
+
+
+<a class="top-btn" href="#">↑ Back to Top</a>
+
+</div>
+
+<footer>
+<p>© 2026 Engineering Notes | BEU Students</p>
+</footer>
+
+</body>
+</html>
